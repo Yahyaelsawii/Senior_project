@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class SceneManager : MonoBehaviour
 {
     public Transform cameraTransform;
-    public GameObject labPoint;
+    public GameObject labPoint; // This is the upstairs room
+    public Transform xrOriginTransform; // Reference to XR Origin for VR teleportation
     public GameObject brightnessSliderPanel;
     public Light pLight;
     public Slider slider;
@@ -37,15 +39,8 @@ public class SceneManager : MonoBehaviour
     }
     public void OnPlayButtonClick()
     {
-        cameraTransform.position = labPoint.transform.position;
-        if(currentstate == States.Down)
-        {
-            currentstate = States.Up;
-        }
-        else
-        {
-            currentstate = States.Down;
-        }
+        // Load the Lab scene (main menu Play button)
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Lab");
     }
     public void OnOptionsButtonClick()
     {
