@@ -24,12 +24,20 @@ public class SceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slider.onValueChanged.AddListener(onSliderchange);
+        // Safely wire up UI only if references are assigned
+        if (slider != null)
+        {
+            slider.onValueChanged.AddListener(onSliderchange);
+        }
+
         currentstate = States.Down;
 
-        contrastSlider.minValue = 0;
-        contrastSlider.maxValue = 255;
-        contrastSlider.onValueChanged.AddListener(OnContrastSliderChanged);
+        if (contrastSlider != null)
+        {
+            contrastSlider.minValue = 0;
+            contrastSlider.maxValue = 255;
+            contrastSlider.onValueChanged.AddListener(OnContrastSliderChanged);
+        }
     }
 
     // Update is called once per frame
