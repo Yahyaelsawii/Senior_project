@@ -10,13 +10,20 @@
 
 ### Core Scripts
 
-#### Custom Scripts
-- **`Assets/SceneManager.cs`** - Main scene management script
-  - Manages camera teleportation to lab point
-  - Controls brightness slider panel
-  - Handles light intensity adjustment
-  - Manages contrast slider for mesh renderers
-  - State management (Up/Down states)
+#### Custom Gameplay / UI Scripts (`Assets/Scripts/`)
+- **`UI/SceneManager.cs`** - Main menu logic
+  - Handles Lab load, brightness and contrast sliders, and state toggles.
+- **`UI/ScreenFader.cs`** - Full‑screen fade in/out and scene transitions.
+- **`UI/UserInfoForm.cs`** - Name/age form
+  - Locks movement and menu buttons until submitted, stores values in `PlayerPrefs`.
+- **`UI/UIButtonClickSound.cs`** - Plays UI click sound via shared `AudioSource`.
+- **`UI/VRKeyboard.cs`** - Simple custom on‑screen keyboard support (kept as backup; primary keyboard now uses XRIT Spatial Keyboard sample).
+- **`UI/LabMenuManager.cs`** - In‑Lab pause/start menu
+  - Toggles world‑space UI with left controller menu button and handles Resume/Main Menu.
+- **`XR/TeleportOnAButton.cs`** - Teleport XR Origin to a target when A button is pressed.
+- **`XR/KeyboardVRSimulator.cs`** - Editor‑only keyboard/mouse movement + XR button simulation.
+- **`XR/SnapXROriginOnStart.cs`** - Optional helper that snaps XR Origin to a spawn point for a short time at scene start.
+- **`System/DontDestroyUISound.cs`** - Makes the global UI sound object persist across scenes.
 
 #### Tutorial Scripts
 - **`Assets/TutorialInfo/Scripts/Readme.cs`** - Tutorial readme script
@@ -141,6 +148,9 @@
   - `TunnelingVignette.prefab` - Comfort vignette effect
   - `XR Interaction Setup.prefab` - Complete XR setup
   - `Teleportation Environment.prefab` - Teleport demo environment
+  - **Spatial Keyboard (Samples)**:
+    - `XRI Global Keyboard Manager.prefab` - Global XR keyboard manager used for name/age input.
+    - `XRI Keyboard.prefab`, `XRI Spatial Keyboard.prefab` and key prefabs - backing assets for the on‑screen VR keyboard.
 
 ---
 
@@ -181,6 +191,7 @@
   - Unity XR Interaction Toolkit 2.6.5
   - Unity XR Management 4.4.0
   - Unity OpenXR 1.10.0
+  - Meta XR All‑in‑One SDK 83.0.4 (for Quest platform features; OpenXR remains active loader)
   - Unity Input System 1.7.0
   - TextMesh Pro 3.0.9
   - Unity UI (uGUI) 2.0.0
@@ -276,4 +287,4 @@
 
 ---
 
-*Index last updated: Feb 7, 2025*
+*Index last updated: Feb 11, 2026*
