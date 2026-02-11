@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
 
-public class SceneManager : MonoBehaviour
+public class SceneManagerNewLab : MonoBehaviour
 {
     public Transform cameraTransform;
-    public GameObject labPoint; // This is the upstairs room
-    public Transform xrOriginTransform; // Reference to XR Origin for VR teleportation
+    public GameObject labPoint;
+    public GameObject ClassPoint;
     public GameObject brightnessSliderPanel;
     public Light pLight;
     public Slider slider;
     public Slider contrastSlider;
     public List<MeshRenderer> meshRenderers;
+    public AudioSource audioSource;
+    public GameObject bubbleUIGO;
     public enum States
     {
         Down,
@@ -24,22 +25,22 @@ public class SceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Safely wire up UI only if references are assigned
-        if (slider != null)
+        if(slider !=null)
         {
             slider.onValueChanged.AddListener(onSliderchange);
-        }
-
-        currentstate = States.Down;
-
-        if (contrastSlider != null)
-        {
+            currentstate = States.Down;
             contrastSlider.minValue = 0;
             contrastSlider.maxValue = 255;
             contrastSlider.onValueChanged.AddListener(OnContrastSliderChanged);
         }
     }
-
+    public void OnClickProfessor()
+    {
+        Debug.Log("Professor Pressed");
+        if(audioSource != null)
+            audioSource.Play();
+        bubbleUIGO.SetActive(true);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -47,8 +48,15 @@ public class SceneManager : MonoBehaviour
     }
     public void OnPlayButtonClick()
     {
-        // Load the Lab scene (main menu Play button)
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Lab");
+        cameraTransform.position = labPoint.transform.position;
+        if(currentstate == States.Down)
+        {
+            currentstate = States.Up;
+        }
+        else
+        {
+            currentstate = States.Down;
+        }
     }
     public void OnOptionsButtonClick()
     {
@@ -73,5 +81,10 @@ public class SceneManager : MonoBehaviour
             if (mr != null)
                 mr.material.color = col;
         }
+    }
+    public void OnTutorialClick()
+    {
+        cameraTransform.position = ClassPoint.transform.position;
+        cameraTransform.rotation = ClassPoint.transform.rotation;
     }
 }
