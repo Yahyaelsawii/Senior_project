@@ -16,6 +16,10 @@ public class SceneManagerNewLab : MonoBehaviour
     public List<MeshRenderer> meshRenderers;
     public AudioSource audioSource;
     public GameObject bubbleUIGO;
+    [TextArea(2, 5)]
+    public List<string> contents;
+    public TMP_Text myText;
+    int contentIndex;
     public enum States
     {
         Down,
@@ -40,6 +44,12 @@ public class SceneManagerNewLab : MonoBehaviour
         if(audioSource != null)
             audioSource.Play();
         bubbleUIGO.SetActive(true);
+
+        myText.text = contents[contentIndex];
+        if(contentIndex < contents.Count-1)
+        {
+            contentIndex++;
+        }
     }
     // Update is called once per frame
     void Update()
