@@ -51,6 +51,15 @@ public class SceneManagerNewLab : MonoBehaviour
             contentIndex++;
         }
     }
+    public void OnClickBack()
+    {
+        Debug.Log("Back Pressed");
+        if(contentIndex > 0)
+        {
+            contentIndex--;
+        }
+        myText.text = contents[contentIndex];
+    }
     // Update is called once per frame
     void Update()
     {
