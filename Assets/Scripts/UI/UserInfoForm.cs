@@ -12,6 +12,7 @@ public class UserInfoForm : MonoBehaviour
     public TMP_InputField nameField;
     public TMP_InputField ageField;
     public GameObject formRoot; // panel / canvas to hide after submit
+    public TMP_Text errorLabel; // red error text inside the panel
 
     [Header("Lock Other UI Until Submitted")]
     public Button[] buttonsToEnableOnSubmit; // background buttons (Play, Options, etc.)
@@ -42,15 +43,31 @@ public class UserInfoForm : MonoBehaviour
         var name = nameField != null ? nameField.text : string.Empty;
         var ageText = ageField != null ? ageField.text : string.Empty;
 
-        int age = 0;
-        int.TryParse(ageText, out age);
+        // Basic validation
+        bool hasName = !string.IsNullOrWhiteSpace(name);
+        bool hasValidAge = int.TryParse(ageText, out int age) && age > 0;
+
+        if (!hasName || !hasValidAge)
+        {
+            if (errorLabel != null)
+            {
+                errorLabel.text = "Please add your name and age";
+                errorLabel.color = Color.red;
+                errorLabel.gameObject.SetActive(true);
+            }
+            return; // Do not continue if invalid
+        }
+
+        // Clear error when valid
+        if (errorLabel != null)
+        {
+            errorLabel.text = string.Empty;
+            errorLabel.gameObject.SetActive(false);
+        }
 
         // Store for later use (simple example using PlayerPrefs)
-        if (!string.IsNullOrEmpty(name))
-            PlayerPrefs.SetString("UserName", name);
-
-        if (age > 0)
-            PlayerPrefs.SetInt("UserAge", age);
+        PlayerPrefs.SetString("UserName", name);
+        PlayerPrefs.SetInt("UserAge", age);
 
         PlayerPrefs.Save();
 
