@@ -250,11 +250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f91190937ab6b8f4a8d28da26b58b011, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.948
+      value: 1.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f91190937ab6b8f4a8d28da26b58b011, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.985
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f91190937ab6b8f4a8d28da26b58b011, type: 3}
       propertyPath: m_LocalPosition.z
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Scissor
+  m_text: Tweezer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
