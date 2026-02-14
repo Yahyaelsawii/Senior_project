@@ -10,13 +10,14 @@ public class DoorAnimatorToggle : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        ToggleDoorOpen();
-        Invoke("ToggleDoorclose", 5f);
+        //ToggleDoorOpen();
+        
     }
 
    public void ToggleDoorOpen()
     {
         anim.SetBool("DoorOpen",true);
+        Invoke("ToggleDoorclose", 5f);
     }
 
      public void ToggleDoorclose()
