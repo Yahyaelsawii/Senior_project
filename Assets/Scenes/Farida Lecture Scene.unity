@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d1f7b5915a4f7e44e9d7c1ef1cab8d46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.088212
+      value: -1.070401
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1f7b5915a4f7e44e9d7c1ef1cab8d46, type: 3}
       propertyPath: m_LocalPosition.y
@@ -140,11 +140,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1f7b5915a4f7e44e9d7c1ef1cab8d46, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -31.61641
+      value: -31.869875
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1f7b5915a4f7e44e9d7c1ef1cab8d46, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9790518
+      value: 0.99989057
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1f7b5915a4f7e44e9d7c1ef1cab8d46, type: 3}
       propertyPath: m_LocalRotation.x
@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1f7b5915a4f7e44e9d7c1ef1cab8d46, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.20361146
+      value: -0.014799447
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1f7b5915a4f7e44e9d7c1ef1cab8d46, type: 3}
       propertyPath: m_LocalRotation.z
@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1f7b5915a4f7e44e9d7c1ef1cab8d46, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 23.496
+      value: -1.696
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1f7b5915a4f7e44e9d7c1ef1cab8d46, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -176,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: da56ffddae14ff64fbb0a29ad072a135, type: 2}
     - target: {fileID: 919132149155446097, guid: d1f7b5915a4f7e44e9d7c1ef1cab8d46, type: 3}
       propertyPath: m_Name
-      value: chemestry-lab-classroom (1)
+      value: labclassroom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -277,6 +277,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &564770525
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.84
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.35000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -28.208
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7850306
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.619457
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -76.553
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 31750a8815d1098448517af3bafce48a, type: 3}
+      propertyPath: m_Name
+      value: LabLadyProfessor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 31750a8815d1098448517af3bafce48a, type: 3}
 --- !u!1001 &2049908829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -438,3 +495,4 @@ SceneRoots:
   - {fileID: 513249304}
   - {fileID: 2049908829}
   - {fileID: 17255918}
+  - {fileID: 564770525}
