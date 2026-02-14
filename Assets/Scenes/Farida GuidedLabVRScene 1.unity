@@ -1085,7 +1085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 7.6}
+  m_AnchoredPosition: {x: 0, y: 13.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502430420
@@ -1108,7 +1108,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nStep 1: \n Pick the gloves"
+  m_text: '
+
+
+    These are the following steps to guide you through this lab. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1135,8 +1138,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 6
-  m_fontSizeBase: 6
+  m_fontSize: 3
+  m_fontSizeBase: 3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1171,7 +1174,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 62.495625, y: 0, z: 73.02274, w: 0}
+  m_margin: {x: 71.99251, y: 21.043106, z: 84.15088, w: 9.877739}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1573,13 +1576,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.050523512, z: -0, w: 0.9987229}
+  m_LocalRotation: {x: -0, y: -0.30883503, z: -0, w: 0.95111567}
   m_LocalPosition: {x: 4.51, y: 1.94, z: -47.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -5.792, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -35.978, z: 0}
 --- !u!1 &1010692420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,7 +1623,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   bubbleUIGO: {fileID: 316972729}
   contents:
-  - 'Step 1 : pick '
+  - 'Step 1 :  Pick the scalpel to split the brain in half '
   - 'Step 2 : [Content Text]'
   - 'Step 3 : [Content Text]'
   - 'Step 4 : [Content Text]'
@@ -1838,17 +1841,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075052145}
-  m_LocalRotation: {x: -0, y: 0.10462311, z: -0, w: 0.99451196}
-  m_LocalPosition: {x: 0, y: 0, z: -10.6}
+  m_LocalRotation: {x: 0, y: -0.008726465, z: 0, w: 0.999962}
+  m_LocalPosition: {x: 0, y: 0, z: -2.1}
   m_LocalScale: {x: 0.16666666, y: 0.16666667, z: 0.16666666}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1623321297}
   m_Father: {fileID: 316972730}
-  m_LocalEulerAnglesHint: {x: 0, y: -47.598, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -1, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.1, y: -5.7}
+  m_AnchoredPosition: {x: -18.6, y: -5.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075052147
@@ -2291,17 +2294,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286159888}
-  m_LocalRotation: {x: -0, y: 0.10462311, z: -0, w: 0.99451196}
-  m_LocalPosition: {x: 0, y: 0, z: -14.2}
+  m_LocalRotation: {x: 0, y: -0.008726465, z: 0, w: 0.999962}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 0.16666666, y: 0.16666667, z: 0.16666666}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1367642927}
   m_Father: {fileID: 316972730}
-  m_LocalEulerAnglesHint: {x: 0, y: -47.598, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -1, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5, y: -5.9}
+  m_AnchoredPosition: {x: 7.3, y: -5.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286159890
